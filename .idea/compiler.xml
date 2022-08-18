@@ -6,13 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rpc" />
-        <module name="eureka" />
+        <module name="forum" />
         <module name="kad-server" />
+        <module name="rpc" />
+        <module name="blockchain" />
+        <module name="eureka" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="blockchain" target="1.8" />
       <module name="eureka" target="1.8" />
+      <module name="forum" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="kad-server" target="1.8" />
       <module name="noserver" target="1.8" />
       <module name="rpc" target="1.8" />
@@ -20,7 +26,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="blockchain" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="forum" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="kad-server" options="-parameters" />
       <module name="noserver" options="" />
       <module name="rpc" options="-parameters" />
