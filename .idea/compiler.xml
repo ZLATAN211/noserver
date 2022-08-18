@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rpc" />
         <module name="eureka" />
+        <module name="kad-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka" target="1.8" />
+      <module name="kad-server" target="1.8" />
       <module name="noserver" target="1.8" />
       <module name="rpc" target="1.8" />
     </bytecodeTargetLevel>
@@ -19,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka" options="-parameters" />
+      <module name="kad-server" options="-parameters" />
       <module name="noserver" options="" />
       <module name="rpc" options="-parameters" />
     </option>
