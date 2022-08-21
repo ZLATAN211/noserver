@@ -8,6 +8,14 @@
         <version>2.6.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <modules>
+        <module>blockchain</module>
+        <module>eureka</module>
+        <module>forum</module>
+        <module>gateway</module>
+        <module>kad-server</module>
+        <module>rpc</module>
+    </modules>
     <packaging>pom</packaging>
     <groupId>com.example</groupId>
     <artifactId>noserver</artifactId>
